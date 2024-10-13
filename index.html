@@ -1,86 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <!--this portfolio-->
-    <meta name="viewport">
-<title>poulla raafat</title>
-
+    <!--This is a portfolio website for Poulla Raafat-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Poulla Raafat</title>
 </head>
 <body>
+    <!-- Header Section -->
     <section id="header">
-    <h1>Poulla</h1>
-    <ul> 
-    <li><a href="#about-me">About Me</a></li>
-    <li><a href="#projects">Projects</a></li>  
-    <li><a href="#skills">Skills</a></li>  
-    <li><a href="#contact">Contact</a></li>
+        <h1>Poulla</h1>
+        <ul> 
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>  
+            <li><a href="#skills">Skills</a></li>  
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </section>
-    <section id="about me">
-    </ul> 
-    <h2>About Me</h2>
-    <P>Hi I'm Poulla Raafat, a web developer with a 
-    passion fro creating interactive and user-friendly websites.</P>
-    <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*fHrAZJ1_L0Ff9dvVexL5_A.png" alt="    web development" height="300">
+
+    <!-- About Me Section -->
+    <section id="about-me">
+        <h2>About Me</h2>
+        <p>Hi, I'm Poulla Raafat, a web developer with a passion for creating interactive and user-friendly websites.</p>
+        <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*fHrAZJ1_L0Ff9dvVexL5_A.png" alt="web development" height="300">
     </section>
+
+    <!-- Projects Section -->
     <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-        <li>
-            <h3>Project One</h3>
-            <p>simple project about commerce website . </p>
-            <a href="view project">View Project</a> 
-        </li> 
-        <li>
-            <h3>Project Two</h3>
-            <p>simple project about height quality photos . </p>
-        </li> 
-    </ul>
-    <figure>
-        <img src="images/snap-gallery.png" alt="project two image" height="300"/>
-        <figcaption>This image showcases the SnapGallery project in action.</figcaption>
-    </figure>
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <h3>Project One</h3>
+                <p>A simple project about an e-commerce website.</p>
+                <a href="https://yourprojectlink.com" target="_blank">View Project</a> 
+            </li> 
+            <li>
+                <h3>Project Two</h3>
+                <p>A simple project about high-quality photos.</p>
+            </li> 
+        </ul>
+        <figure>
+            <img src="images/snap-gallery.png" alt="SnapGallery project image" height="300"/>
+            <figcaption>This image showcases the SnapGallery project in action.</figcaption>
+        </figure>
     </section>
+
+    <!-- Skills Section -->
     <section id="skills">
         <h2>Skills</h2>
         <table>
             <tr>
                 <th>Skill</th>
-                <th>Exeprience level</th>
-
+                <th>Experience Level</th>
             </tr>
             <tr>
                 <td>HTML</td>
-                <td>intermediate</td>
+                <td>Intermediate</td>
             </tr>
             <tr>
                 <td>CSS</td>
-                <td>intermediate</td>
+                <td>Intermediate</td>
             </tr>
             <tr>
-                <td>JS</td>
-                <td>intermediate</td>
+                <td>JavaScript</td>
+                <td>Intermediate</td>
             </tr>
         </table>
-
     </section>
+
+    <!-- Contact Section -->
     <section id="contact">
-        <h2>Contact</h2>
-        <label>Name:</label><br>
-        <input><br><br>
-        <label>Email:</label><br>
-        <input><br><br>
-        <label>Message:</label><br>
-        <input><br><br>
-        <button>submit</button>
-    </section><br>
-    <section id="footer">
-        <footer><p>&copy;2024 poulla.Allright reserved.</p></footer>
+        <h2>Contact Me</h2>
+        <form action="your-server-endpoint" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="5" required></textarea><br><br>
+            
+            <button type="submit">Submit</button>
+        </form>
     </section>
 
+    <!-- Footer Section -->
+    <footer id="footer">
+        <p>&copy; 2024 Poulla Raafat. All rights reserved.</p>
+    </footer>
 </body>
-
-
-
-
-
 </html>
