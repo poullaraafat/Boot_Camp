@@ -5,18 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Poulla Raafat</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Header Section -->
-    <section id="header">
-        <h1>Poulla</h1>
-        <ul> 
+    <header>
+        <nav>
+            <h1>Poulla</h1>
+          <ul>
             <li><a href="#about-me">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>  
-            <li><a href="#skills">Skills</a></li>  
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
-        </ul>
-    </section>
+          </ul>
+        </nav>
+      </header>
 
     <!-- About Me Section -->
     <section id="about-me">
@@ -29,15 +32,10 @@
     <section id="projects">
         <h2>Projects</h2>
         <ul>
-            <li>
-                <h3>Project One</h3>
-                <p>A simple project about an e-commerce website.</p>
-                <a href="https://yourprojectlink.com" target="_blank">View Project</a> 
-            </li> 
-            <li>
-                <h3>Project Two</h3>
+
+                <h3>Snap-Gallery Project</h3>
                 <p>A simple project about high-quality photos.</p>
-            </li> 
+        
         </ul>
         <figure>
             <img src="images/snap-gallery.png" alt="SnapGallery project image" height="300"/>
@@ -70,8 +68,8 @@
 
     <!-- Contact Section -->
     <section id="contact">
-        <h2>Contact Me</h2>
-        <form action="your-server-endpoint" method="post">
+        <h2>Contact</h2>
+        <form method="post">
             <label for="name">Name:</label><br>
             <input type="text" id="name" name="name" required><br><br>
             
@@ -81,7 +79,7 @@
             <label for="message">Message:</label><br>
             <textarea id="message" name="message" rows="5" required></textarea><br><br>
             
-            <button type="submit">Submit</button>
+            <button type="submit">Send Message</button>
         </form>
     </section>
 
