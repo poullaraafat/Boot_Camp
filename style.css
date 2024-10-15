@@ -13,7 +13,8 @@ body {
     justify-content: space-around;
 
   }
- 
+
+
   
   a {
     color: #007BFF;
@@ -55,6 +56,16 @@ body {
   nav ul li a:hover {
     background-color: #555;
     border-radius: 4px;
+  }
+
+#about-me button {
+    padding: 10px 20px;
+    background-color: #0d1013;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    right: 500px;
+    top: 460px;
   }
   /* Image Responsive by Default */
 img {
