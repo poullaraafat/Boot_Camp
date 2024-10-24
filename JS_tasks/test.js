@@ -83,3 +83,98 @@ function even_Number(a, z) {
         }
     }
 }
+
+//functoin to log eachh element in the array
+function elements(arr) {
+    for(let i = 0; i < arr.length; i++)
+        console.log(arr[i]);
+}
+
+// function to add elemnets to array
+function add(x, arr) {
+    arr.push(x);
+    return arr;
+}
+
+// function to remove elements from array
+function remove(x, arr) {
+    arr.pop(x);
+    return arr;
+}
+
+// for each method
+function elements2(arr) {
+    arr.forEach(elm => {
+        console.log(elm);
+    });
+}
+
+// even numbers
+let array = [1,2,3,4,5,6,7,8,9,10];
+function even_Num(array) {
+    array.forEach(elm => {
+        if(elm % 2 === 0){
+            console.log(elm);
+        }
+    });
+}
+// sort array
+let array2 = []
+function sort(array2){
+    array2.sort((a, b) => a - b);
+    console.log(array2)
+}
+
+//objects//
+let book = {
+    title: "The Great Gatsby",
+    author: "F. Scott Fitzgerald",
+    yearPublished: 1925,
+    describtion() {
+        return `${this.title} by ${this.author}, published in ${this.yearPublished}.`;
+    }
+};
+function logBook(book) {
+    for (let key in book) {
+        console.log(`${key}: ${book[key]}`);
+    }
+}
+let books = [
+    { title: "The Great Gatsby", author: "F. Scott Fitzgerald", yearPublished: 1925 },
+    { title: "To Kill a Mockingbird", author: "Harper Lee", yearPublished: 1960 },
+    { title: "1984", author: "George Orwell", yearPublished: 1949 },
+    { title: "Pride and Prejudice", author: "Jane Austen", yearPublished: 1813 },
+    { title: "Moby Dick", author: "Herman Melville", yearPublished: 1851 }
+];
+//find book
+function findBook(title, books) {
+    for(let book of books){
+        if(book.title === title){
+            return book;
+        }
+    }
+}
+// students
+function getListStudents() {
+    return [
+        { id: 1, firstName: "Ziad", location: "San Francisco" },
+        { id: 2, firstName: "James", location: "Columbia" },
+        { id: 5, firstName: "Serena", location: "San Francisco" }
+    ];
+}
+//student id
+function getListStudentIds(students) {
+    if (!Array.isArray(students)) {
+        return [];
+    }
+    return students.map(student => student.id);
+}
+//student location
+function getStudentsByLocation(students, city) {
+    return students.filter(student => student.location === city);
+}
+//getStudentIdsSum
+function getStudentIdsSum(students) {
+    return students.reduce((sum, student) => sum + student.id, 0);
+}
+
