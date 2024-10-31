@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Books Collection</h1>
+    <form id="book-form" class="book-form">
+        <div class="book">
+            <input type="text" id="title" placeholder="Book Title" required>
+            <input type="text" id="author" placeholder="Author Name" required>
+            <input type="number" id="year" placeholder="Publication Year" required>
+            <input type="text" id="genre" placeholder="Genre" required>
+            <button type="submit">Add Book</button>
+            <button type="button" id="updateButton" style="display: none;">Update Book</button>
+        </div>
+    </form>
+    <div id="bookListContainer">
+        <h2>Book List</h2>
+        <ul id="bookList" class="book-list"></ul>
+    </div>
+    <script src="book.js"></script>
+</body>
+</html>

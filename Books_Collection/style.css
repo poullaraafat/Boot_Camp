@@ -1,0 +1,83 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header Styles */
+h1 {
+    padding: 20px;
+    text-align: center;
+    color: #333;
+}
+
+/* Form Styles */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+form .book input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+form .book button {
+    width: 50%;
+    margin-left: 25%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+form .book button:hover {
+    background-color: #555555;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.book-list {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.book-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.book-item button {
+    padding: 5px;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book-item button:hover {
+    background-color: #555555;
+}
